@@ -1,0 +1,131 @@
+Good habits when writing codes
+
+
+Design:
+	Adobe XD - to design the website wireframe
+
+
+
+CSS:
+
+a) Add table of contents at the top using comments
+
+	/*
+	Table of contents
+	1. global styles
+	2. Page sections like head, section, components, buttons etc
+	*/
+
+
+
+b) Use comments to seperate css codes and reuse it
+
+	/*
+	=============
+	global styles
+	=============
+	*/
+
+	/*
+	=============
+	navbar
+	=============
+	*/
+
+
+
+c) Use class more than id
+
+	.class {
+		background-color: red;	
+	}
+
+
+
+d) Reset global styles at the beginning
+
+	* {
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: serif, sans;
+	}
+
+
+
+e) Remove line decorations for links
+
+	a {
+		text-decoration: none;
+	}
+
+
+
+f) Use only one colour palette for websites
+	black and white is a must and add a splash of one colour to complement
+	use the images on the page to find that one colour
+	
+
+
+g) colour sites
+	https://color.adobe.com/explore
+	https://mycolor.space/
+	
+
+
+h) smooth scrolling in the same page
+
+	<nav>
+	<a href="#one">One</a>
+	<a href="#two">One</a>
+	<a href="#three">One</a>
+	</nav>
+
+	<section id="one"></section>
+	<section id="two"></section>
+	<section id="three"></section>
+
+	html {
+		scroll-behaviour: smooth;
+	}
+
+
+i) use <nav> tags with <a> links for navigation buttons
+
+j) use <main> for the main body
+
+k) use <section> tags to seperate page full page. 
+
+
+<body>
+	<header>
+		<div>
+			logo
+		</div>
+
+		<nav>
+			<ul>
+				<li><a>Home</a></li>
+				<li><a>About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<div>
+			
+			</div>
+		</section>
+	</main>
+</body>
+
+
+
+l) Good google fonts list
+
+	poppins (+ medium)
+	monsterrat (+ medium)
