@@ -26,9 +26,39 @@ body {
 
 #searchButton {
   cursor: pointer;
+  border: none;
+  background: #c36cbb;
+  color: rgb(255, 255, 255);
+  width: 70px;
+  height: 30px;
+  font-size: 14px;
+}
+
+#searchButton:hover {
+  cursor: pointer;
+  background: white;
+  color: #c36cbb;
+  width: 70px;
+  height: 30px;
+  font-size: 14px;
 }
 
 #home {
   text-decoration: none;
   color: white;
+  background: #c36cbb;
+  font-size: 14px;
+  padding: 6px;
+}
+
+#inputValue {
+  color: #333;
+  font-size: 15px;
+  padding: 4px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
 }
