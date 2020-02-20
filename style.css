@@ -12,16 +12,9 @@ body {
   color: white;
 }
 
-#container-two {
+.container-one {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-#container-two h1 {
-  font-size: 50px;
-  cursor: pointer;
+  padding: 10px;
 }
 
 #searchButton {
@@ -32,11 +25,12 @@ body {
   width: 70px;
   height: 30px;
   font-size: 14px;
+  margin: 0px 5px 0px 5px;
 }
 
 #searchButton:hover {
   cursor: pointer;
-  background: white;
+  background: rgb(255, 255, 255);
   color: #c36cbb;
   width: 70px;
   height: 30px;
@@ -45,10 +39,22 @@ body {
 
 #home {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   background: #c36cbb;
   font-size: 14px;
-  padding: 6px;
+  padding: 1px 10px 11px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#home:hover {
+  text-decoration: none;
+  color: #c36cbb;
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 1px 10px 11px 10px;
+  text-align: center;
+  cursor: pointer;
 }
 
 #inputValue {
@@ -62,3 +68,16 @@ body {
   border-bottom: 0.3rem solid transparent;
   transition: all 0.3s;
 }
+
+#container-two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container-two h1 {
+  font-size: 50px;
+  cursor: pointer;
+}
+
