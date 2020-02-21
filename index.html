@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Weather App</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <main>
-    <section>
-      <div class="container-one">
-        <div class='container-one-section-one'>
-          <input id="inputValue" placeholder="Enter a city's name" />
+  <body>
+    <main>
+      <section>
+        <div class="container-one">
+          <div class="container-one-section-one">
+            <input id="inputValue" placeholder="Enter a city's name" />
+          </div>
+          <div class="container-one-section-two">
+            <button id="searchButton" onclick="validation()">Search</button>
+          </div>
+          <div>
+            <a href="index.html"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
         </div>
-        <div class='container-one-section-two'>
-          <button id="searchButton" onclick="validation()">Search</button>
-        </div>
-        <div class='container-one-section-three'>
-          <a href="index.html" id="home">H</a>
-        </div>
-      </div>
 
-      <div id="container-two">
-        <p id="location"></p>
-        <h1 id="weather"></h1>
-        <canvas class="iconId" width="128" height="128"></canvas>
-        <p id="weather-description"></p>
-        <br />
-        <p id="wind"></p>
-        <p id="humidity"></p>
-      </div>
-    </section>
-  </main>
-  <script src='skycons.js'></script>
-  <script src="script.js"></script>
-</body>
-
+        <div id="container-two">
+          <canvas class="iconId" width="128" height="128"></canvas>
+          <h1 id="weather"></h1>
+          <p id="weather-description"></p>
+          <br />
+          <p id="wind"></p>
+          <p id="humidity"></p>
+          <hr class="line-style" />
+          <p id="location"></p>
+        </div>
+      </section>
+    </main>
+    <script src="skycons.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

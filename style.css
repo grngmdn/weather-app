@@ -23,9 +23,9 @@ body {
   background: #c36cbb;
   color: rgb(255, 255, 255);
   width: 70px;
-  height: 30px;
+  height: 30.5px;
   font-size: 14px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 0px;
 }
 
 #searchButton:hover {
@@ -33,8 +33,9 @@ body {
   background: rgb(255, 255, 255);
   color: #c36cbb;
   width: 70px;
-  height: 30px;
+  height: 30.5px;
   font-size: 14px;
+  border: 1px solid #c36cbb;
 }
 
 #home {
@@ -74,10 +75,32 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 200px;
 }
 
 #container-two h1 {
-  font-size: 50px;
+  font-size: 80px;
   cursor: pointer;
 }
 
+i {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0px 0px 0px 0px;
+  border: none;
+  padding: 3px 5px 3px 5px;
+  background: #c36cbb;
+  text-decoration: none;
+  color: white;
+}
+
+i:hover {
+  color: #c36cbb;
+  background: rgb(255, 255, 255);
+}
+
+.line-style {
+  border-top: 0.1px solid rgb(255, 255, 255);
+  width: 185px;
+  margin: 10px 0px 10px 0px;
+}
