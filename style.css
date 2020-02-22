@@ -12,23 +12,95 @@ body {
   color: white;
 }
 
+.container-one {
+  display: flex;
+  padding: 10px;
+}
+
+#searchButton {
+  cursor: pointer;
+  border: none;
+  background: #c36cbb;
+  color: rgb(255, 255, 255);
+  width: 70px;
+  height: 30.5px;
+  font-size: 14px;
+  margin: 0px 5px 0px 0px;
+}
+
+#searchButton:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: #c36cbb;
+  width: 70px;
+  height: 30.5px;
+  font-size: 14px;
+  border: 1px solid #c36cbb;
+}
+
+#home {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: #c36cbb;
+  font-size: 14px;
+  padding: 1px 10px 11px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#home:hover {
+  text-decoration: none;
+  color: #c36cbb;
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 1px 10px 11px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#inputValue {
+  color: #333;
+  font-size: 15px;
+  padding: 4px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
 #container-two {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 180px;
 }
 
 #container-two h1 {
-  font-size: 50px;
+  font-size: 80px;
   cursor: pointer;
 }
 
-#searchButton {
+i {
+  font-size: 25px;
   cursor: pointer;
-}
-
-#home {
+  margin: 0px 0px 0px 0px;
+  border: none;
+  padding: 3px 5px 3px 5px;
+  background: #c36cbb;
   text-decoration: none;
   color: white;
+}
+
+i:hover {
+  color: #c36cbb;
+  background: rgb(255, 255, 255);
+}
+
+.line-style {
+  border-top: 0.1px solid rgb(255, 255, 255);
+  width: 185px;
+  margin: 10px 0px 10px 0px;
 }
