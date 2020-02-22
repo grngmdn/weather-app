@@ -55,6 +55,9 @@ window.addEventListener('load', function load() {
 
             //set icons for the canvas animation
             setIcons(icon, document.querySelector('.iconId'));
+
+            // change background color
+            changeBackground(info);
           })
           .catch(err => console.log(err));
       })
@@ -139,6 +142,9 @@ function findWeather() {
 
       // set icons for the canvas animation
       setIcons(icon, document.querySelector('.iconId'));
+
+      // change background color
+      changeBackground(info);
     })
     .catch(err => console.log(err));
 
@@ -170,3 +176,35 @@ function findWeather() {
 
 // CLEAR_DAY, CLEAR_NIGHT, PARTLY_CLOUDY_DAY, PARTLY_CLOUDY_NIGHT, CLOUDY, RAIN, SLEET, SNOW, WIND, FOG
 // THUNDERSTORM, DRIZZLE, RAIN, SNOW, ATMOSPHERE, CLEAR, CLOUDS
+
+// function to change the background color
+function changeBackground(info) {
+  switch (info.weather[0].main) {
+    case 'Clear':
+      document.body.style.background =
+        'linear-gradient(0deg, rgba(186,202,217,1) 0%, rgba(0,91,174,1) 52%, rgba(1,55,132,1) 100%)';
+      break;
+
+    case 'Clouds':
+      document.body.style.background =
+        'linear-gradient(180deg, rgba(159,173,200,1) 0%, rgba(71,74,81,1) 100%, rgba(120,119,125,1) 100%)';
+      break;
+
+    case 'Rain':
+    case 'Drizzle':
+    case 'Mist':
+      document.body.style.background =
+        'linear-gradient(169deg, rgba(53,61,78,1) 0%, rgba(106,130,148,1) 60%, rgba(196,210,220,1) 100%)';
+      break;
+
+    case 'Thunderstorm':
+      document.body.style.background =
+        'linear-gradient(180deg, rgba(30,40,99,1) 0%, rgba(144,95,160,1) 100%)';
+      break;
+
+    case 'Snow':
+      document.body.style.background =
+        'linear-gradient(165deg, rgba(100,173,223,1) 0%, rgba(135,184,211,1) 100%)';
+      break;
+  }
+}
